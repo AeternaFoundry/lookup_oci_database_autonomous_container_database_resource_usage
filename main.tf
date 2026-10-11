@@ -1,0 +1,6 @@
+data "oci_database_autonomous_container_database_resource_usage" "database_autonomous_container_database_resource_usage_lookup" {
+  for_each = var.database_autonomous_container_database_resource_usage_lookup
+
+  autonomous_container_database_id = each.value.autonomous_container_database_id
+}
+
